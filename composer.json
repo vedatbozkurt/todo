@@ -1,0 +1,51 @@
+{
+    "name": "wedat/todo",
+    "description": "Todo mamangement tool",
+    "keywords": [
+        "wedat",
+        "todo"
+    ],
+    "homepage": "https://github.com/wedat/todo",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Vedat Bozkurt",
+            "email": "info@wedat.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wedat\\Todo\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wedat\\Todo\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wedat\\Todo\\TodoServiceProvider"
+            ],
+            "aliases": {
+                "Todo": "Wedat\\Todo\\TodoFacade"
+            }
+        }
+    }
+}
