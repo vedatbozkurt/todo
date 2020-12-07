@@ -4,7 +4,7 @@
  * @Email: info@wedat.org
  * @Date: 2020-12-07 21:59:47
  * @LastEditors: @vedatbozkurt
- * @LastEditTime: 2020-12-07 22:46:29
+ * @LastEditTime: 2020-12-07 23:26:09
  */
 
 namespace Wedat\Todo\Http\Controllers;
@@ -44,5 +44,11 @@ class TodoController extends Controller
         );
         TodoModel::create($form_data);
         return redirect()->route('todos.index')->with('success', 'added successfully');
+    }
+    public function destroy($id)
+    {
+        $data = TodoModel::findOrFail($id);
+        $data->delete();
+        return redirect()->route('todos.index')->with('success', 'deleted successfully');
     }
 }
