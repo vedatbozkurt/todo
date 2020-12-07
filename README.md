@@ -1,9 +1,16 @@
+<!--
+ * @Author: @vedatbozkurt
+ * @Email: info@wedat.org
+ * @Date: 2020-12-07 20:50:46
+ * @LastEditors: @vedatbozkurt
+ * @LastEditTime: 2020-12-07 20:50:46
+-->
 # Very short description of the package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/wedat/todo.svg?style=flat-square)](https://packagist.org/packages/wedat/todo)
-[![Build Status](https://img.shields.io/travis/wedat/todo/master.svg?style=flat-square)](https://travis-ci.org/wedat/todo)
-[![Quality Score](https://img.shields.io/scrutinizer/g/wedat/todo.svg?style=flat-square)](https://scrutinizer-ci.com/g/wedat/todo)
-[![Total Downloads](https://img.shields.io/packagist/dt/wedat/todo.svg?style=flat-square)](https://packagist.org/packages/wedat/todo)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/wedat/todo.svg?style=flat-square)](https://packagist.org/packages/vedatbozkurt/todo)
+[![Build Status](https://img.shields.io/travis/wedat/todo/master.svg?style=flat-square)](https://travis-ci.org/vedatbozkurt/todo)
+[![Quality Score](https://img.shields.io/scrutinizer/g/wedat/todo.svg?style=flat-square)](https://scrutinizer-ci.com/g/vedatbozkurt/todo)
+[![Total Downloads](https://img.shields.io/packagist/dt/wedat/todo.svg?style=flat-square)](https://packagist.org/packages/vedatbozkurt/todo)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
@@ -12,7 +19,7 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require wedat/todo
+composer require vedatbozkurt/todo
 ```
 
 ## Usage
@@ -41,7 +48,7 @@ If you discover any security related issues, please email info@wedat.org instead
 
 ## Credits
 
-- [Vedat Bozkurt](https://github.com/wedat)
+- [Vedat Bozkurt](https://github.com/vedatbozkurt)
 - [All Contributors](../../contributors)
 
 ## License
