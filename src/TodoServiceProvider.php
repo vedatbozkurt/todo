@@ -4,7 +4,7 @@
  * @Email: info@wedat.org
  * @Date: 2020-12-07 19:59:49
  * @LastEditors: @vedatbozkurt
- * @LastEditTime: 2020-12-07 22:10:05
+ * @LastEditTime: 2020-12-07 22:33:20
  */
 
 namespace Wedat\Todo;
@@ -25,7 +25,7 @@ class TodoServiceProvider extends ServiceProvider
          * Optional methods to load your package assets
          */
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'todo');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'todo');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'todo');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
         $this->registerRoutes();
@@ -45,9 +45,9 @@ class TodoServiceProvider extends ServiceProvider
             ], 'config');
 
             // Publishing the views.
-            /*$this->publishes([
+            $this->publishes([
                 __DIR__.'/../resources/views' => resource_path('views/vendor/todo'),
-            ], 'views');*/
+            ], 'views');
 
             // Publishing assets.
             /*$this->publishes([

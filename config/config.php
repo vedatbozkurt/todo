@@ -4,7 +4,7 @@
  * @Email: info@wedat.org
  * @Date: 2020-12-07 22:09:13
  * @LastEditors: @vedatbozkurt
- * @LastEditTime: 2020-12-07 22:11:21
+ * @LastEditTime: 2020-12-07 22:12:41
  */
 
 /*
@@ -12,5 +12,7 @@
  */
 return [
     'name' => 'todoApp',
-    'prefix' => 'wtodo'
+    'prefix' => 'wtodo',
+    // 'middleware' => ['web'],
+    
 ];
