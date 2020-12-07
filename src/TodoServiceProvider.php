@@ -4,13 +4,15 @@
  * @Email: info@wedat.org
  * @Date: 2020-12-07 19:59:49
  * @LastEditors: @vedatbozkurt
- * @LastEditTime: 2020-12-07 21:32:02
+ * @LastEditTime: 2020-12-07 22:10:05
  */
 
 namespace Wedat\Todo;
 
 use Illuminate\Support\ServiceProvider;
 use Wedat\Todo\Console\InstallTodoPackage;
+
+use Illuminate\Support\Facades\Route;
 
 class TodoServiceProvider extends ServiceProvider
 {
@@ -25,7 +27,8 @@ class TodoServiceProvider extends ServiceProvider
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'todo');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'todo');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        // $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        $this->registerRoutes();
 
         if ($this->app->runningInConsole()) {
 
@@ -76,5 +79,20 @@ class TodoServiceProvider extends ServiceProvider
         $this->app->singleton('todo', function () {
             return new Todo;
         });
+    }
+
+    protected function registerRoutes()
+    {
+        Route::group($this->routeConfiguration(), function () {
+            $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        });
+    }
+
+    protected function routeConfiguration()
+    {
+        return [
+        'prefix' => config('todo.prefix'),
+        // 'middleware' => config('todo.middleware'),
+    ];
     }
 }
