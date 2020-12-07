@@ -4,7 +4,7 @@
  * @Email: info@wedat.org
  * @Date: 2020-12-07 19:59:49
  * @LastEditors: @vedatbozkurt
- * @LastEditTime: 2020-12-07 20:44:12
+ * @LastEditTime: 2020-12-07 21:04:57
  */
 
 namespace Wedat\Todo;
@@ -24,7 +24,7 @@ class TodoServiceProvider extends ServiceProvider
          */
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'todo');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'todo');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {

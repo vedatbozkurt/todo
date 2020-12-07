@@ -4,7 +4,7 @@
  * @Email: info@wedat.org
  * @Date: 2020-12-07 20:35:57
  * @LastEditors: @vedatbozkurt
- * @LastEditTime: 2020-12-07 20:38:08
+ * @LastEditTime: 2020-12-07 21:04:07
  */
 
 namespace Wedat\Todo\Models;
