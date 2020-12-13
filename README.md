@@ -5,14 +5,6 @@
  * @LastEditors: @vedatbozkurt
  * @LastEditTime: 2020-12-07 20:50:46
 -->
-# Very short description of the package
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/wedat/todo.svg?style=flat-square)](https://packagist.org/packages/vedatbozkurt/todo)
-[![Build Status](https://img.shields.io/travis/wedat/todo/master.svg?style=flat-square)](https://travis-ci.org/vedatbozkurt/todo)
-[![Quality Score](https://img.shields.io/scrutinizer/g/wedat/todo.svg?style=flat-square)](https://scrutinizer-ci.com/g/vedatbozkurt/todo)
-[![Total Downloads](https://img.shields.io/packagist/dt/wedat/todo.svg?style=flat-square)](https://packagist.org/packages/vedatbozkurt/todo)
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
 ## Installation
 
@@ -22,11 +14,6 @@ You can install the package via composer:
 composer require vedatbozkurt/todo
 ```
 
-## Usage
-
-``` php
-// Usage description here
-```
 
 ### Testing
 
@@ -54,7 +41,3 @@ If you discover any security related issues, please email info@wedat.org instead
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
